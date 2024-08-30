@@ -2,11 +2,43 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
   background-color: #111;
   font-family: Arial, sans-serif;
+}
+
+#social-links {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.social-button.instagram {
+  background-color: #e1306c;
+}
+
+.social-button.linkedin {
+  background-color: #0077b5;
+}
+
+.social-button.github {
+  background-color: #333;
+}
+
+.social-button:hover {
+  opacity: 0.8;
 }
 
 #game-board {
